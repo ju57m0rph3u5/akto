@@ -50,7 +50,7 @@ const collections = {
                 commit('CREATE_COLLECTION', resp, options)
                 window._AKTO.$emit('SHOW_SNACKBAR', {
                     show: true,
-                    text: `${name} ` +`added successfully!`,
+                    text: `${name} ` +"added successfully!",
                     color: 'green'
                 })
             }).catch((err) => {})
