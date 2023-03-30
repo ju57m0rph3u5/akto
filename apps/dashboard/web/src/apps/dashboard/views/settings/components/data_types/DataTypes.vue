@@ -57,14 +57,14 @@ export default {
         toggleSuccessFunc (resp, item) {
             window._AKTO.$emit('SHOW_SNACKBAR', {
                 show: true,
-                text: `${item.name} `+ (item.active? 'de' : '') +`activated successfully!`,
+                text: `${item.name} `+ (item.active? 'de' : '') +"activated successfully!",
                 color: 'green'
             })
         },
         toggleFailureFunc (err, item) {
             window._AKTO.$emit('SHOW_SNACKBAR', {
                 show: true,
-                text: `An error occurred while `+ (item.active? 'de' : '')+`activating ${item.name}!`,
+                text: "An error occurred while "+ (item.active? 'de' : '')+`activating ${item.name}!`,
                 color: 'red'
             })
         },

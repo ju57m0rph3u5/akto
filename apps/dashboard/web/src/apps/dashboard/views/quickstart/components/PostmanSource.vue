@@ -77,7 +77,7 @@ export default {
             this.importing_workspace = false;
             window._AKTO.$emit('SHOW_SNACKBAR', {
                 show: true,
-                text: `Imported! Go to API inventory and refresh to view your postman collection.`,
+                text: "Imported! Go to API inventory and refresh to view your postman collection.",
                 color: 'green'
             })
         }
